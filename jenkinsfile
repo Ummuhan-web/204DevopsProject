@@ -1,5 +1,5 @@
 pipeline{
-    agent { label "main" }
+    agent { label "master" }
     environment {
         ECR_REGISTRY = "597161409065.dkr.ecr.us-east-1.amazonaws.com"
         APP_REPO_NAME = "ummu-repo/phonebook-app"
