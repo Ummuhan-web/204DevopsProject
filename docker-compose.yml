@@ -16,7 +16,7 @@ services:
         networks:
             - clarusnet
     app-server:
-        image: "046402772087.dkr.ecr.us-east-1.amazonaws.com/call-repo/phonebook-app:latest"
+        image: "597161409065.dkr.ecr.us-east-1.amazonaws.com/ummu-repo/phonebook-app:latest"
         deploy:
             mode: global
             update_config:
@@ -28,12 +28,12 @@ services:
         networks:
             - clarusnet
 networks:
-    clarusnet:
+    clarusnet: 
         driver: overlay
 
 volumes:
     db-data:
-
+ 
 configs:
     table:
         file: ./init.sql
